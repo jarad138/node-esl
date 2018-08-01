@@ -158,6 +158,7 @@ function testServerInstance(server) {
 
     //private functions
     expect(server._onConnection).to.be.a('function');
+    expect(server._onError).to.be.a('function');
     expect(server._onListening).to.be.a('function');
     expect(server._generateId).to.be.a('function');
 
